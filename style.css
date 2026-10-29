@@ -1,0 +1,18 @@
+:root { --accent: #3A2A00; --bg: #FFF8E7; --card: #FFFFFF; --text: #2B2416; --sub: #6B5E45; --line: #EADFC4; }
+@media (prefers-color-scheme: dark) {
+  :root { --accent: #F2C14E; --bg: #1C1A16; --card: #2A2620; --text: #F4EEDF; --sub: #BFB49B; --line: #3A342A; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.75 -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; background: var(--bg); color: var(--text); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+header.top { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header.top img { width: 56px; height: 56px; border-radius: 13px; }
+h1 { font-size: 28px; margin: 0; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--accent); }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); }
+.sub { color: var(--sub); }
+.card { background: var(--card); border-radius: 16px; padding: 4px 20px 16px; margin: 16px 0; border: 1px solid var(--line); }
+nav { margin: 8px 0 24px; display: flex; gap: 16px; flex-wrap: wrap; }
+nav a, a { color: var(--accent); }
+footer { margin-top: 48px; color: var(--sub); font-size: 14px; }
